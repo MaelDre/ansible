@@ -1,4 +1,0 @@
-[web]
-92.243.9.79 ansible_user=admin
-[db]
-92.243.8.74 ansible_user=admin
