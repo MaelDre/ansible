@@ -1,3 +1,3 @@
 notes_ansible.md
-.sources/
-.mael-init/
+sources/*
+mael-init/*
