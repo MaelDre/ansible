@@ -1,0 +1,7 @@
+---
+
+# NEW SERVERS
+- hosts: all
+  tasks:
+    - name: "ping servers"
+      ping:

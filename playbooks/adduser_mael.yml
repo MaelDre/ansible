@@ -1,0 +1,15 @@
+---
+
+# NEW SERVERS
+- hosts: all
+  vars:
+    identifiant: maelinho
+    mdp: $6$NIp3d9hG$qHiLRfh6v43eEsssqiMnJD1Incmd4XPa1T9PWLTLT1R9F1xX.gPGL/OVilW5U7kQEBLrbXQWJMPgLdDOY1SEs1
+  tasks:
+    - name: "useradd mael"
+      user:
+        name: "{{ identifiant }}"
+        groups: admin, sudo
+        password: "{{ mdp }}"
+        shell: /bin/bash
+      become: true

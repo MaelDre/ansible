@@ -1,0 +1,17 @@
+---
+
+# NEW SERVERS
+- hosts: all
+  tasks:
+    - name: "add mumble repository"
+      apt_repository:
+        repo: 'ppa:mumble/release'
+        state: present
+      become: true
+
+    - name: "install mumble"
+      apt:
+        name: mumble-server
+        update_cache: yes
+        state: latest
+      become: true

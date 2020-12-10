@@ -1,0 +1,14 @@
+---
+
+# NEW SERVERS
+- hosts: newservers
+  become: true
+
+  tasks:
+  - name: install vim
+    apt:
+      name: vim
+      state: present
+      update_cache: yes
+
+

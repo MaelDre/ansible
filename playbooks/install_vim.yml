@@ -1,0 +1,10 @@
+---
+
+# NEW SERVERS
+- hosts: all
+  tasks:
+    - name: "install vim"
+      apt:
+        name: vim
+        state: latest
+      become: true
